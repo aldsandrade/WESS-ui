@@ -1,0 +1,13 @@
+<div class="dash-container" style="width: 100%; height: 86%;">
+  <div id="menu-lateral"style="display: inline-block; width: 10%; height: 100%; align-content: center;">
+    <p>Olá</p>
+  </div>
+    <div id="painel" style="display: inline-block; width: 80%; height: 100%;">
+      <canvas baseChart
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType">
+      </canvas>
+    </div>
+  </div>

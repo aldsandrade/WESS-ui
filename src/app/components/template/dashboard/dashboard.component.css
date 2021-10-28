@@ -1,0 +1,16 @@
+.dash-container {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+}
+
+#menu-lateral {
+	width: 20%;
+}
+
+#painel {
+  margin: auto;
+  padding: 40px;
+	width: 80%;
+}

@@ -10,13 +10,13 @@
         <!-- <div class="conteudo"> -->
             <div class="cardGraficoBola">
                 <div class="bola">
-                    <div class="pontuacao" [ngStyle]="{'width':cisternaUm +'%','height':cisternaUm +'%'}">
-                        <p id="porcentagemP">{{cisternaUm}}%</p>
+                    <div class="pontuacao" [ngStyle]="{'width':volumes[0].volume +'%','height':volumes[0].volume +'%'}">
+                        <p id="porcentagemP">{{volumes[0].volume}}%</p>
                     </div>
                 </div>
                 <div class="bola">
-                    <div class="pontuacao" [ngStyle]="{'width':cisternaDois +'%','height':cisternaDois +'%'}">
-                        <p id="porcentagemP">{{cisternaDois}}%</p>
+                    <div class="pontuacao" [ngStyle]="{'width':volumes[1].volume +'%','height':volumes[1].volume +'%'}">
+                        <p id="porcentagemP">{{volumes[1].volume}}%</p>
                     </div>
                 </div>
             </div>

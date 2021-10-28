@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
+import { DashboardComponent } from './components/template/dashboard/dashboard.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
@@ -18,6 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { FlexModule  } from '@angular/flex-layout';
 import { AboutComponent } from './components/template/about/about.component';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
@@ -38,7 +43,8 @@ import { MatCardModule } from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     FlexModule,
-    MatCardModule
+    MatCardModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
