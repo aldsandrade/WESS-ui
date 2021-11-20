@@ -7,10 +7,14 @@ import { Volume } from '../models/volume';
 })
 export class MysqlService {
 
-  private readonly url = 'http://localhost:8080/volumes';
+  private readonly url = 'http://localhost:8080/';
   constructor(private http: HttpClient) { }
 
   listar(){
-    return  this.http.get<Volume[]>(this.url);
+    return  this.http.get<Volume[]>(this.url+'volumes');
+  }
+
+  buscarDados(ano){
+    return  this.http.get<number[]>(this.url+'dashboard', {params: {ano: ano.toString()}});
   }
 }
