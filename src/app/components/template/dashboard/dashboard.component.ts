@@ -95,6 +95,8 @@ export class DashboardComponent implements OnInit {
   buscaDados() {
     this.mysqlService.buscarDados(2021).subscribe(volumes => {
       this.data2021 = volumes;
+      this.atualizaCheck2021()
+      this.atualizaCheck2021()
     });
     this.mysqlService.buscarDados(2019).subscribe(volumes => {
       this.data2019 = volumes;
