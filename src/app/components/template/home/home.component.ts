@@ -30,7 +30,10 @@ export class HomeComponent implements OnInit {
   atualizaVolume() {
     this.mysqlService.listar().subscribe(objetos => {
       objetos.forEach(objeto => {
-        objeto.volume = objeto.volume*20; // multiplicado por 20 pois o volume máximo é de 5 litros, logo 1 litro = 20%, 5 litros = 100%
+        objeto.volume = objeto.volume*33; // multiplicado por 20 pois o volume máximo é de 5 litros, logo 1 litro = 20%, 5 litros = 100%
+        if (objeto.volume === 99) {
+          objeto.volume = 100
+        }
       })
 
       this.volumes = objetos;
